@@ -1,0 +1,182 @@
+body{
+
+}
+
+h4  {
+  font-family: 'Playfair Display', serif;
+  text-transform: Capitalize;
+}
+
+h3  {
+  font-family: 'Playfair Display', serif;
+  text-transform: Capitalize;
+}
+
+p   {
+  font-family: 'Raleway', sans-serif;
+}
+hr  {
+  height: 1px;
+  margin-top: 5px;
+  border: 0;
+  background-color: grey;
+}
+
+.hr-footer  {
+  border-bottom: .5px solid grey;
+  color: grey;
+  height: .5px;
+}
+
+a:link {
+  text-decoration: none;
+  color: black;
+  font-family: 'Raleway', sans-serif;
+}
+
+a:hover {
+  text-decoration: none;
+  color: black;
+  font-family: 'Raleway', sans-serif;
+}
+
+a:visited {
+  text-decoration: none;
+  color: black;
+  font-family: 'Raleway', sans-serif;
+}
+
+.login  {
+  margin-top: 10px;
+}
+
+.top-menu {
+  background-color: #b7d7e8;
+  border-bottom: 1px solid grey;
+  border-right: 1px solid grey;
+  border-left: 1px solid grey;
+}
+
+.banner {
+
+}
+
+.category {
+  width: 100%;
+  margin: 5px;
+  min-height: 100px;
+  border: 1px solid grey;
+  background-color: #fff2df;
+}
+
+.main-body  {
+  border: 1px solid grey;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #87bdd8;
+}
+
+.button-banner  {
+  margin-top: 8px;
+}
+
+.book {
+  width: 100%;
+  margin: 5px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  background-color: khaki;
+  padding: 5px;
+}
+
+.id-image {
+  width: 75px;
+  height: 75px;
+  border: 1px solid black;
+}
+
+.creator-card-title {
+  border: 1px solid darkgrey;
+  background-color: lightgrey;
+  margin-top: 5px;
+  padding-top: 8px;
+}
+/*
+.creator-card-title h3  {
+  margin: 0;
+}
+*/
+.creator-card-body  {
+  border-bottom: 1px solid darkgrey;
+  border-right: 1px solid darkgrey;
+  border-left: 1px solid darkgrey;
+  padding: 5px;
+  background-color: #f2f2f2;
+}
+
+.creator-card-footer  {
+  border-bottom: 1px solid darkgrey;
+  border-right: 1px solid darkgrey;
+  border-left: 1px solid darkgrey;
+  padding: 5px;
+  background-color: #lightgrey;
+}
+
+.book-card-title {
+  border: 1px solid darkgrey;
+  background-color: #87bdd8;
+  margin-top: 5px;
+  padding-top: 8px;
+}
+
+.book-card-title h3  {
+  margin-top: 0;
+}
+
+.book-card-body  {
+  border-bottom: 1px solid darkgrey;
+  border-right: 1px solid darkgrey;
+  border-left: 1px solid darkgrey;
+  padding: 5px 5px 5px 25px;
+  background-color: #f2f2f2;
+}
+
+.book-card-body-title {
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+}
+
+.book-card-footer  {
+  border-bottom: 1px solid darkgrey;
+  border-right: 1px solid darkgrey;
+  border-left: 1px solid darkgrey;
+  padding: 5px 5px 5px 0px;
+  background-color: lightgrey;
+}
+
+.book-card-footer p{
+  margin: 0;
+}
+
+.footer-buttons {
+  margin-top: 15px;
+}
+
+.btn-success  {
+  background-color: #daebe8;
+  color: black;
+}
+
+.btn-danger {
+  background-color: #eca1a6;
+  color: black;
+}
+
+.btn-warning  {
+  background-color: #fbefcc;
+  color: black;
+}
+
+.flash  {
+  color: red;
+}

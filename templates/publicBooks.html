@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+{% block content %}
+{% include "header.html" %}
+<div class="row">
+	<div class="col-md-1">
+	</div>
+	<div class="col-md-7">
+		<div class="row">
+			<div class="col-md-12 text-center">
+					<h3>{{ category.name }}</h3>
+			</div>
+		</div>
+		<div class="row">
+			{% if books !=[] %}
+				<div class="row">
+					<div class="col-md-12">
+							{% for b in books %}
+								<div class="col-md-12 book-card-title">
+									<h3 class="text-center">{{b.title}}</h3>
+								</div>
+								<div class="col-md-12 book-card-body">
+									<p class="h4 book-card-body-title"> Description:</p>
+									<p>{{b.description}}</p>
+								</div>
+								<div class="col-md-12 book-card-footer">
+									<div class="col-md-6 text-left">
+										<p>Author: {{b.author}}</p>
+									</div>
+								</div>
+							{% endfor %}
+					</div>
+				</div>
+			{% else %}
+			<div class="row">
+				<div class="col-md-12">
+					<div class="col-md-12 book-card-title">
+						<h3 class="text-center">Please add a book</h3>
+					</div>
+					<div class="col-md-12 book-card-body">
+						<p class="h4 book-card-body-title"> Description:</p>
+						<p>There are no books in this category. Once you have added some, they will be displayed here.</p>
+					</div>
+					<div class="col-md-12 book-card-footer">
+						<div class="col-md-6 text-left">
+							<p></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			{% endif %}
+		</div>
+	</div>
+	<div class="col-md-4 card">
+		<div class = 'flash'>
+				      {% with messages = get_flashed_messages() %}
+		      {% if messages %}
+
+		        <ul>
+		        {% for message in messages %}
+		            <li> <strong> {{ message }} </strong> </li>
+		        {% endfor %}
+		        </ul>
+		        {% endif %}
+		    {% endwith %}
+
+		</div>
+		<div class="col-md-12 text-center creator-card-title">
+			<p>Created by:</p>
+		</div>
+		<div class="col-md-12 creator-card-body">
+			<div class="col-md-6 text-center">
+				<p>{{creator.name}}:</p>
+			</div>
+			<div class="col-md-6 text-center">
+				<img class="id-image" src="{{creator.picture}}">
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+{% endblock %}

@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% block content %}
+{% include "header.html" %}
+	<div class="row divider blue">
+		<div class="col-md-12"></div>
+	</div>
+	<div class="row banner">
+		<div class="col-md-1"></div>
+		<div class="col-md-10">
+			<h1 class="text-center">Subjects</h1>
+		<div class="col-md-1"></div>
+		</div>
+	</div>
+
+<div class = 'flash'>
+		      {% with messages = get_flashed_messages() %}
+      {% if messages %}
+
+        <ul>
+        {% for message in messages %}
+            <li> <strong> {{ message }} </strong> </li>
+        {% endfor %}
+        </ul>
+        {% endif %}
+    {% endwith %}
+
+</div>
+<div class="row">
+	<div class="col-md-1"></div>
+		<div class="col-md-10 main-body">
+			{% for category in categories %}
+				<a href = "{{url_for('showCategory', category_id = category.id)}}">
+					<div class="col-md-4 category text-center">
+							<h3 class="card-title">{{category.name}}</h3>
+					</div>
+				</a>
+			{% endfor %}
+		</div>
+	<div class="col-md-1"></div>
+</div>
+	<div class="row button-banner">
+		<div class="col-md-1"></div>
+		<div class="col-md-10 text-right">
+			<a href="{{url_for('newCategory')}}">
+				<button class="btn btn-success" id="new-category">Add Subject</button>
+			</a>
+		</div>
+		<div class="col-md-1"></div>
+	</div>
+{% endblock %}

@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block content %}
+{% include "header.html" %}
+<div class="row">
+	<div class="col-md-1">
+	</div>
+	<div class="col-md-7">
+		<div class="col-md-12 text-center book-card-title">
+			<h3>Delete Book</h3>
+		</div>
+		<div class="col-md-12 book-card-body">
+			<p> Are you sure you want to delete {{book.title}}? </p>
+
+			<form action="#" method = 'post'>
+
+				<button type="submit" class="btn btn-danger delete" id="submit" type="submit">Delete</button>
+				<a href = '{{url_for('showBookshelf')}}'class="btn btn-warning delete">Cancel</a>
+
+			</form>
+		</div>
+	</div>
+	<div class="col-md-4">
+		<div class="col-md-12 text-center creator-card-title">
+			<p>Current User:</p>
+		</div>
+		<div class="col-md-12 creator-card-body">
+			<div class="col-md-6 text-center">
+				<p>{{creator.name}}:</p>
+			</div>
+			<div class="col-md-6 text-center">
+				<img class="id-image" src="{{creator.picture}}">
+			</div>
+		</div>
+	</div>
+</div>
+
+
+{% endblock %}

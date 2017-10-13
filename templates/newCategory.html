@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block content %}
+{% include "header.html" %}
+<div class="row">
+	<div class="col-md-1">
+	</div>
+	<div class="col-md-7">
+		<div class="col-md-12 text-center book-card-title">
+			<h3>New Subject</h3>
+		</div>
+		<div class="col-md-12 book-card-body">
+			<form action="#" method = "post">
+				<div class="form-group">
+				<label for="name">Name:</label>
+				<input type ="text" class="form-control" maxlength="100" name="name">
+				<div class="footer-buttons"></div>
+					<button type="submit" class="btn btn-success" id="submit" type="submit">Create</button>
+					<a href = '{{url_for('showBookshelf')}}'>
+						<button class="btn btn-warning delete">
+						Cancel
+						</button>
+					</a>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="col-md-4">
+		<div class="col-md-12 text-center creator-card-title">
+			<p>Current User:</p>
+		</div>
+		<div class="col-md-12 creator-card-body">
+			<div class="col-md-6 text-center">
+				<p>{{creator.name}}:</p>
+			</div>
+			<div class="col-md-6 text-center">
+				<img class="id-image" src="{{creator.picture}}">
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}
