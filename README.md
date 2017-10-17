@@ -21,6 +21,8 @@ The following are the set-up parameters for a Linux server running on Amazon AWS
 
 
 * **Summary of Configurations Made**
+  1. General Configurations
+    - Changed timezone to UTC
   1. User management & File Permissions:
     - Remote access for root user turned off.
     - New user "Grader" created.
