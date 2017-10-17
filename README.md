@@ -5,7 +5,7 @@ The following are the set-up parameters for a Linux server running on Amazon AWS
 1. **IP Address and SSH port** = 52.14.79.23:2200
 2. **URL** = [52.14.79.23/bookshelf.html](52.14.79.23/bookshelf.html)
 3. **Login ID** Grader
-4. **Public Key** = Public Key located in repo as `AmazonKey.pem`
+4. **Public Key** = in notes
 
 
 ## Project Information
